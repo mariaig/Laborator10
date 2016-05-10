@@ -1,5 +1,7 @@
 package ro.pub.cs.systems.pdsd.lab10.googlemaps.service;
 
+import com.google.android.gms.location.GeofencingEvent;
+
 import ro.pub.cs.systems.pdsd.lab10.googlemaps.R;
 import ro.pub.cs.systems.pdsd.lab10.googlemaps.general.Constants;
 import ro.pub.cs.systems.pdsd.lab10.googlemaps.graphicuserinterface.GoogleMapsGeofenceEventActivity;
@@ -30,7 +32,6 @@ public class GeofenceTrackerIntentService extends IntentService {
 		// - include the transition type
 		// - include the request identifier (getRequestId()) for each  geofence that triggered the event (getTriggeringGeofences())
 		// send a notification with the detailed message (sendNotification())
-
 	}
 	
 	private void sendNotification(String notificationDetails) {
